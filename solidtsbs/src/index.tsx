@@ -1,6 +1,7 @@
 import { render } from 'solid-js/web'
 
 import 'bootstrap/scss/bootstrap.scss'
+
 import './cheatsheet.scss'
 
 import Themes from './Themes.tsx'
