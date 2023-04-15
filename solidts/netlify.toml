@@ -1,4 +1,4 @@
 [build]
   base="solidts"
-  command="npm build"
+  command="vite build"
   publish="dist"
