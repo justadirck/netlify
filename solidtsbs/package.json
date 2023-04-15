@@ -4,9 +4,10 @@
   "description": "",
   "scripts": {
     "start": "vite",
-    "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy:netlify": "pnpm build && netlify deploy --prod",
+    "deploy:surge": "pnpm build && surge ./dist justadirck-solidtsbs.surge.sh"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.7",

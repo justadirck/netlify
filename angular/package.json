@@ -5,7 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development"
+    "watch": "ng build --watch --configuration development",
+    "deploy:netlify": "ng build && netlify deploy --prod",
+    "deploy:surge": "ng build && surge ./dist/angular justadirck-angular.surge.sh"
   },
   "dependencies": {
     "@angular/animations": "^15.2.0",
