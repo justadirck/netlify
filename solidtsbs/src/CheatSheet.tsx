@@ -2,14 +2,14 @@ import { onCleanup, onMount } from 'solid-js'
 import type { Component } from 'solid-js'
 import * as bootstrap from 'bootstrap'
 
-import cheatsheet from './cheatsheet.html.ts'
+import html from './cheatsheet.html.js'
 
-const App: Component = () => {
+const CheatSheet: Component = () => {
 
   function setActiveItem() {
 
     const { hash } = window.location
-    console.log(hash)
+    // console.log(hash)
 
     if (hash === '') {
       return
@@ -90,9 +90,9 @@ const App: Component = () => {
   })
 
   return (
-    <div id="app" innerHTML={cheatsheet} />
+    <div id="app" innerHTML={html} />
   )
 
 }
 
-export default App
+export default CheatSheet

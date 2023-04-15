@@ -1,8 +1,8 @@
 import { render } from 'solid-js/web'
 
 import 'bootstrap/scss/bootstrap.scss'
-import './cheatsheet.css.scss'
+import './cheatsheet.scss'
 
-import App from './App'
+import CheatSheet from './CheatSheet.tsx'
 
-render(() => <App />, document.getElementById('root')!)
+render(() => <CheatSheet />, document.getElementById('root')!)
