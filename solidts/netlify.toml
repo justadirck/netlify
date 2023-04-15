@@ -1,3 +1,4 @@
 [build]
+  base="solidts"
   command="npm build"
   publish="dist"
