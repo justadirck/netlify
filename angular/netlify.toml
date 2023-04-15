@@ -1,6 +1,6 @@
 [build]
   base="angular"
-  command="npm build"
+  command="ng build"
   publish="dist/angular"
 
 [[redirects]]
