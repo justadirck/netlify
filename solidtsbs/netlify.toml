@@ -1,0 +1,4 @@
+[build]
+  base="solidtsbs"
+  command="vite build"
+  publish="dist"
