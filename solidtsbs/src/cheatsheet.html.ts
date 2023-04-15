@@ -2,9 +2,9 @@ export default `
 
   <header class="bd-header py-3 d-flex align-items-stretch border-bottom border-dark">
     <div class="container-fluid d-flex align-items-center">
-      <h1 class="d-flex align-items-center fs-4 text-white mb-0">
+      <a href="/" border=0>
         <img src="/bootstrap-logo-white.svg" width="38" height="30" class="me-3" alt="Bootstrap">
-      </h1>
+      </a>
     </div>
   </header>
 
