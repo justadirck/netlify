@@ -9,7 +9,6 @@ const CheatSheet: Component = () => {
   function setActiveItem() {
 
     const { hash } = window.location
-    // console.log(hash)
 
     if (hash === '') {
       return
@@ -47,32 +46,24 @@ const CheatSheet: Component = () => {
   }
 
   onMount(() => {
-    console.log('onmount')
 
-    // tooltips
     window.document.querySelectorAll('.tooltip-demo')
       .forEach(tooltip => {
         new bootstrap.Tooltip(tooltip, {
           selector: '[data-bs-toggle="tooltip"]'
         })
-        //console.log(tooltip)
       })
 
-    // popovers
     window.document.querySelectorAll('[data-bs-toggle="popover"]')
       .forEach(popover => {
         new bootstrap.Popover(popover)
-        //console.log(popover)
       })
 
-    // toasts
     window.document.querySelectorAll('.toast')
       .forEach(toastNode => {
         new bootstrap.Toast(toastNode, { autohide: false }).show()
-        //console.log(toastNode)
       })
 
-    // disable empty anchors
     window.document.querySelectorAll('[href="#"], [type="submit"]')
       .forEach(link => {
         link.addEventListener('click', event => {
@@ -85,8 +76,9 @@ const CheatSheet: Component = () => {
   })
 
   onCleanup(() => {
-    console.log('oncleanup')
+
     window.removeEventListener('hashchange', setActiveItem)
+
   })
 
   return (
