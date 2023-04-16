@@ -1,0 +1,4 @@
+[build]
+  base="svelte"
+  command="vite build"
+  publish="build"
