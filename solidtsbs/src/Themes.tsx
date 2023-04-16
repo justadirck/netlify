@@ -6,6 +6,7 @@ import html from './themes.html.ts'
 const Themes: Component = () => {
 
   const storedTheme = localStorage.getItem('theme')
+  if(!storedTheme) localStorage.setItem('theme', 'dark')
 
   const getPreferredTheme = () => {
 
